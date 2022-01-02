@@ -10,7 +10,7 @@ from pyrogram.errors import FloodWait
 from config import Config
 from translation import Translation
 
-FILTER = Config.FILTER_TYPE
+
 files_count = 0
 
 #===================Run Function===================#
@@ -21,8 +21,6 @@ async def run(bot, message):
     global FROM
     global TO
     global LIMIT
-    if str(message.from_user.id) not in Config.OWNER_ID:
-        return
     fromid = await bot.ask(message.chat.id, Translation.FROM_MSG)
     if fromid.text.startswith('/'):
         await message.reply(Translation.CANCEL)
