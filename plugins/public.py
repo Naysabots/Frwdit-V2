@@ -10,7 +10,7 @@ from pyrogram.errors import FloodWait
 from config import Config
 from translation import Translation
 
-FILTER = Translation.FILTER_TYPE
+FILTER = Config.FILTER_TYPE
 files_count = 0
 
 #===================Run Function===================#
