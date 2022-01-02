@@ -9,7 +9,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQ
 from pyrogram.errors import FloodWait
 from config import Config
 from translation import Translation
-
+import os
 # filters for auto post
 FILTER_TEXT = bool(os.environ.get("FILTER_TEXT", True))
 FILTER_AUDIO = bool(os.environ.get("FILTER_AUDIO", True))
